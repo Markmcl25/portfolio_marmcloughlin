@@ -11,6 +11,7 @@ body, html {
     font-size: 18px;
     line-height: 1.6;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -22,6 +23,10 @@ h1, h2, h3, h4, h5, h6, p {
 .navbar {
     background-color: #1F1F1F !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar-brand {
@@ -43,11 +48,13 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 45vh;
     background: linear-gradient(135deg, #1F1F1F, #4D96FF);
     text-align: center;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 40px; /* Raised the hero section */
+    margin-bottom: 40px; /* Added gap between hero and projects */
 }
 
 .hero h1 {
@@ -127,6 +134,12 @@ section:hover {
 
     .navbar-brand {
         font-size: 1.5rem;
+    }
+
+    .hero {
+        height: 35vh;
+        margin-top: 30px; /* Adjusted for smaller screens */
+        margin-bottom: 30px; /* Consistent gap on mobile */
     }
 
     .hero h1 {
