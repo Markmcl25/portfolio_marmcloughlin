@@ -27,16 +27,19 @@ h1, h2, h3, h4, h5, h6, p {
     top: 0;
     width: 100%;
     z-index: 1000;
+    padding: 10px 30px; /* Added padding for more space */
 }
 
 .navbar-brand {
     font-size: 1.8rem;
-    color: #FF6B6B !important;
+    color: white !important;
+    margin-left: 20px; /* Space from the left edge */
 }
 
 .nav-link {
     color: #6BCB77 !important;
     transition: color 0.3s ease;
+    margin: 0 15px; /* Space between links */
 }
 
 .nav-link:hover {
@@ -54,7 +57,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin-top: 40px; /* Raised the hero section */
-    margin-bottom: 40px; /* Added gap between hero and projects */
+    margin-bottom: 100px; /* Added gap between hero and projects */
 }
 
 .hero h1 {
@@ -113,6 +116,7 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    text-align: center; /* Center the paragraphs */
 }
 
 section:hover {
@@ -124,6 +128,27 @@ section:hover {
 #contact p {
     font-size: 1.2rem;
     color: #6BCB77;
+    text-align: center; /* Center contact paragraph */
+}
+
+/* Footer */
+footer {
+    background-color: #1F1F1F;
+    padding: 20px;
+    text-align: center;
+    color: #6BCB77;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #4D96FF;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FF6B6B;
 }
 
 /* Responsive Design */
@@ -134,6 +159,11 @@ section:hover {
 
     .navbar-brand {
         font-size: 1.5rem;
+        margin-left: 10px; /* Adjust space for smaller screens */
+    }
+
+    .nav-link {
+        margin: 0 10px; /* Adjust space for smaller screens */
     }
 
     .hero {
