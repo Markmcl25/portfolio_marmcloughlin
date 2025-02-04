@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #6BCB77 !important;
     transition: color 0.3s ease;
     margin: 0 15px; /* Space between links */
+    font-size: 1.5rem;
 }
 
 .nav-link:hover {
