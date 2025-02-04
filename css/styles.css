@@ -1,0 +1,78 @@
+/* Importing Bebas Neue Font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #6BCB77;
+}
+
+p {
+    color: #E0E0E0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #1F1F1F !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: #FF6B6B !important;
+}
+
+.nav-link {
+    color: #6BCB77 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4D96FF !important;
+}
+
+/* Section Styling */
+section {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #6BCB77;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Info */
+#contact p {
+    font-size: 1.2rem;
+    color: #6BCB77;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
